@@ -24,7 +24,7 @@ metadata:
     tags: quickstart,nodejs
     iconClass: icon-nodejs
     template.openshift.io/bindable: "false"
-    openshift.io/documentation-url: "https://github.com/openshift-cs/ghost-example"
+    openshift.io/documentation-url: "https://github.com/MMGInstructor/ghost-example"
 message: >-
   If relying on a generated hostname, be sure to update the `url` environment variable
           oc set env dc ghost url=https://$(oc get route ghost -o custom-columns=HOST:.spec.host --no-headers)
